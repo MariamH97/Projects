@@ -1,0 +1,13 @@
+Docker 1st assignment :
+
+- Run an Nginx Container and make it accessable though your browser.
+    docker pull nginx
+    docker run --name my-nginx -d -p 8080:80 nginx
+    http://localhost:8080
+
+- then enter the container and restart the Nginx service
+   docker exec -it my-nginx /bin/bash
+   service nginx restart
+
+ 
+  
